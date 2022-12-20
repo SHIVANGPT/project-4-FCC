@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  /* background: linear-gradient(to left bottom, rgba(225, 81, 81, 0.822), rgba(100, 100, 244, 0.721)); */
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: #eee;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  margin: 0 0.5rem;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.nav-link:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+#header-img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+/* main sectiion starts here  */
+
+form {
+  display: block;
+}
+
+.main-sec-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 200px;
+  margin-top: 10vh;
+}
+
+.main-sec-head h2 {
+  font-size: 1.5rem;
+}
+
+.main-sec-head input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.main-sec-head input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+/* /////////Features starts */
+
+#Features {
+  margin: 0 2.5rem 5rem 5rem;
+  padding: 2rem 1rem;
+}
+#Features h3 {
+  font-size: 2rem;
+}
+
+#Features p {
+  margin-bottom: 3rem;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+#How_it_works {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#How_it_works iframe {
+  width: 47rem;
+  margin: auto;
+}
+
+/* .////////////// Pricing  */
+
+#Pricing {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.pricing-box {
+  width: 16rem;
+  height: auto;
+  margin: 4rem auto;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5%;
+  padding: 2%;
+  text-align: center;
+}
+.pricing-box-heading {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  background-color: #ddd;
+  padding: 0.5rem;
+}
+
+.pricing-box-rupee {
+  font-size: 1.4rem;
+  font-weight: 1000;
+  margin-bottom: 1rem;
+}
+
+.pricing-box p {
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.btn-pricing {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 1.5rem 0;
+  border: 0;
+  background-color: #f1c40f;
+  font-size: medium;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(150, 150, 150);
+}
+.foot span {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+/* /////////MEDIA QUERY///////// */
+/* /////////MEDIA QUERY///////// */
+@media screen and (max-width: 658px) {
+  /* html{
+        font-size: 13px;
+     } */
+  #header {
+    flex-direction: column;
+  }
+  #nav-bar {
+    margin-top: 1rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  #video {
+    width: 300px;
+  }
+  #Pricing {
+    display: block;
+  }
+  footer {
+    justify-content: center;
+  }
+}
